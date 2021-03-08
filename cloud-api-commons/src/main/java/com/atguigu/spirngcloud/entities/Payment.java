@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.entities;
+package com.atguigu.spirngcloud.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +16,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Payment implements Serializable {
-    private long id;
+    private  long id;
     private String serial;
-
 }

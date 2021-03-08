@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.dao;
 
-import com.atguigu.springcloud.entities.Payment;
+
+import com.atguigu.spirngcloud.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -12,9 +13,9 @@ import org.springframework.stereotype.Repository;
  * @date 2021/3/4
  */
 @Mapper
-//@Repository //推荐使用mapper，res可能插入有问题
+// @Repository //推荐使用mapper，res可能插入有问题
 public interface PaymentDao {
-    public int create(Payment payment);
+    int create(Payment payment);
 
-    public Payment getPaymentById(@Param("id") Long id);
+    Payment getPaymentById(@Param("id") Long id);
 }
